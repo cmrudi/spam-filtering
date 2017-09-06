@@ -1,0 +1,1 @@
+/home/asus/Semester7/NLP/SpamFiltering/data/SMSSpamCollection
