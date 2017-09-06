@@ -86,7 +86,7 @@ public class DataSet {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		System.out.println(wekaInstances);
+//		System.out.println(wekaInstances);
 	}
 	
 	private Instances filterDiscretize(Instances dataset, String[] opts) throws Exception {
@@ -98,11 +98,10 @@ public class DataSet {
 	}
 	
 	
-	public static void main(String[] args) {
-		DataSet dataset = new DataSet("/home/asus/Semester7/NLP/SpamFiltering/data/SMSSpamCollection");
-		Instances instances = dataset.getInstances();
-		System.out.println(instances);
-		
-	}
+//	public static void main(String[] args) {
+//		DataSet dataset = new DataSet("data/SMSSpamCollection");
+//		Instances instances = dataset.getInstances();
+//	
+//	}
 	
 }
