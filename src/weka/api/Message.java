@@ -2,7 +2,8 @@ package weka.api;
 
 public class Message {
 	String message;
-	MessageStatus messageStatus;
+	MessageStatus messageStatusLabel;
+	MessageStatus messageStatusClassifier;
 	
 	public String getMessage() {
 		return message;
@@ -12,12 +13,6 @@ public class Message {
 		this.message = message;
 	}
 	
-	public MessageStatus getMessageStatus() {
-		return messageStatus;
-	}
 	
-	public void setMessageStatus(MessageStatus messageStatus) {
-		this.messageStatus = messageStatus;
-	}
 
 }
