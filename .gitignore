@@ -14,3 +14,5 @@
 *.sar
 *.class
 data/filePath.txt
+/.metadata/
+/bin/
