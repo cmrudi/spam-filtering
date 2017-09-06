@@ -22,15 +22,21 @@ public class DataSet {
 	private List<Message> messageList;
 	private String filePath;
 	
-	public void setFilePath(String filePath) {
+	public DataSet(String filePath) {
 		this.filePath = filePath;
+		createInstances();
 	}
 	
-	public Instances getInstance() {
+	public Instances getInstances() {
 		return wekaInstances;
 	}
 	
-	public void createInstances() {
+	private void setFilePath(String filePath) {
+		this.filePath = filePath;
+	}
+	
+	
+	private void createInstances() {
 		FastVector fvNominalVal = new FastVector(2);
 		fvNominalVal.addElement(MessageStatus.SPAM.getStatus());
 		fvNominalVal.addElement(MessageStatus.HAM.getStatus());
@@ -66,11 +72,10 @@ public class DataSet {
 	
 	/*
 	public static void main(String[] args) {
-		DataSet dataset = new DataSet();
-		dataset.setFilePath("/home/asus/Semester7/NLP/SpamFiltering/data/SMSSpamCollection");
-		dataset.createInstances();
+		DataSet dataset = new DataSet("/home/asus/Semester7/NLP/SpamFiltering/data/SMSSpamCollection");
+		Instances instances = dataset.getInstances();
+		System.out.println(instances);
 		
 	}
 	*/
-
 }
